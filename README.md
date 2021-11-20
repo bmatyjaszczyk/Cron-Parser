@@ -1,6 +1,6 @@
 # Deliveroo Cron Parser
 
-###How to install
+### How to install
 1. Add permissions to php file
    - ````chmod +x find.php````
 2. Install PHP 
@@ -18,10 +18,10 @@ Installation help links if needed:
 
 
 
-###To run:
+### To run:
 ````php find.php  "*/15 0 1,15 * 1-5 /usr/bin/find"````
 
-###To run tests:
+### To run tests:
 ````./vendor/bin/phpunit tests````
 
 
