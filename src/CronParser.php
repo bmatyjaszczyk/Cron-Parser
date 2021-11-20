@@ -121,8 +121,9 @@ class CronParser
         }
 
         //Specific to Month:
-        if ($type === self::MONTHS && in_array(strtolower($item), self::MONTH_NAMES)) {
-            return self::MONTH_VALUES[$item];
+        $lowercaseItem = strtolower($item);
+        if ($type === self::MONTHS && in_array($lowercaseItem, self::MONTH_NAMES)) {
+            return self::MONTH_VALUES[$lowercaseItem];
         }
 
         throw new NotStandardFormatException($type . ' is not in standard format');
